@@ -63,10 +63,22 @@ nav a:hover {
   transform: translateX(100%);
 }
 
+.toggle:focus {
+  outline: none;
+}
+
 .toggle .fa-bars {
   display: block;
 }
 
 .toggle .fa-times {
   display: none;
+}
+
+nav.active .toggle .fa-bars {
+  display: none;
+}
+
+nav.active .toggle .fa-times {
+  display: block;
 }
